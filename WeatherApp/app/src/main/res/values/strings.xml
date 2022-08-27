@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="logo_text">Точный прогноз погоды</string>
+</resources>
