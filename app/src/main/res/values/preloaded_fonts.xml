@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alef_bold</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/amiko</item>
+        <item>@font/asset</item>
+        <item>@font/basic</item>
+        <item>@font/palanquin_dark</item>
+    </array>
+</resources>
