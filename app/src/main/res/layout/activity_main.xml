@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral10"
+    android:background="@color/black_gray"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +15,7 @@
         android:fontFamily="@font/palanquin_dark"
         android:text="@string/logo_text"
         android:textAlignment="center"
-        android:textColor="@color/design_default_color_on_primary"
+        android:textColor="@color/white_gray"
         android:textSize="32sp" />
 
     <EditText
@@ -27,7 +27,8 @@
         android:layout_marginTop="100dp"
         android:hint="@string/enter_city_name"
         android:minHeight="48dp"
-        android:textColorHint="@color/material_dynamic_neutral70" />
+        android:textColorHint="@color/gray"
+        android:textColor="@color/gray"/>
 
     <Button
         android:id="@+id/buttonSearch"
@@ -36,7 +37,9 @@
         android:layout_below="@+id/editTextCity"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="25dp"
-        android:text="@string/button_search_text" />
+        android:text="@string/button_search_text"
+        android:textColor="@color/yellow_gray"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewWeather"
@@ -44,9 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonSearch"
         android:layout_marginTop="20dp"
-
         android:textAlignment="center"
-        android:textColor="@color/material_dynamic_neutral70"
+        android:textColor="@color/gray"
         android:textSize="25sp"/>
 
 </RelativeLayout>
