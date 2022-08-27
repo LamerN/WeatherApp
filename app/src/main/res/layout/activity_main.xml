@@ -20,8 +20,33 @@
 
     <EditText
         android:id="@+id/editTextCity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:text="Name" />
+        android:layout_below="@+id/textViewLogo"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
+        android:hint="@string/enter_city_name"
+        android:minHeight="48dp"
+        android:textColorHint="@color/material_dynamic_neutral70" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCity"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/button_search_text" />
+
+    <TextView
+        android:id="@+id/textViewWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSearch"
+        android:layout_marginTop="20dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral70"
+        android:textSize="25sp"/>
+
 </RelativeLayout>

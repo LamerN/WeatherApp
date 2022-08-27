@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="logo_text">Точный прогноз погоды</string>
+    <string name="enter_city_name">Введите название города:</string>
+    <string name="button_search_text">Узнать погоду</string>
 </resources>
