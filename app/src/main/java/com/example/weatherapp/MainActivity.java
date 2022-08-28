@@ -104,7 +104,12 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 JSONObject jsonObject = new JSONObject(result);
-                textViewWeather.setText("Температура: " + jsonObject.getJSONObject("main").getDouble("temp") + "°С");
+                String weatherDescription = jsonObject.getJSONArray("weather").getJSONObject(0).getString("description");
+                double temp = jsonObject.getJSONObject("main").getDouble("temp");
+                double tempFeelsLike = jsonObject.getJSONObject("main").getDouble("feels_like");
+                int pressure = jsonObject.getJSONObject("main").getInt("pressure");
+                double windSpeed = jsonObject.getJSONObject("wind").getDouble("speed");
+                textViewWeather.setText(weatherDescription+"\n температура: " + temp + "°С\n ощущается как: " + tempFeelsLike + "°С\n давление: " + pressure + " мм.рт.ст\n скорость ветра: " + windSpeed +" м/с");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
